@@ -8,6 +8,15 @@ import java.util.List;
 import java.util.Objects;
 import java.util.logging.Logger;
 
+@CrossOrigin(
+    origins = "*",
+    methods = {
+                RequestMethod.OPTIONS,
+                RequestMethod.GET,
+                RequestMethod.PUT,
+                RequestMethod.DELETE,
+                RequestMethod.POST
+})
 @RestController
 @RequestMapping("/msg")
 public class ProducerService {
