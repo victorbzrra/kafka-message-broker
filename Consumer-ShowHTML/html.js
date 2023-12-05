@@ -22,7 +22,6 @@ export const getHTML = (messagesMapped, host, producer) => {
             function exibirMensagem() {
               var message = document.getElementById("message").value;
 
-              alert(${host ? `'${host}'` : undefined || `'http://localhost:8080/msg/send/${producer}'`})
               fetch(${host ? `'${host}'` : undefined || `'http://localhost:8080/msg/send/${producer}'`}, {
                     method: 'POST',
                     mode: 'cors',
